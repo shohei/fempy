@@ -13,7 +13,21 @@ def simple_fem():
     make_stress_element()
 
 def initialize():
-    pass
+    DOF_NODE = 2
+    DOF_TOTAL = 12
+    DOF_TRIA3 = 6
+    ELEMENTS = 4
+    NODES = 6
+    NODES_TRIA3 = 3
+    POISSON  = 0.3
+    THICKNESS = 1
+    connectivity = np.matrix([[1,2,5],
+                              [2,3,4],
+                              [2,4,5],
+                              [1,5,6]])
+    x = np.array([0,1,2,2,1,0])
+    y = np.array([0,0,0,1,1,1])
+
 def make_D():
     pass
 def make_B():
